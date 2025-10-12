@@ -46,7 +46,7 @@
   </h1>
   
     <h2 id="subtitle-wrap">
-      <a href="../../../../index.html" id="subtitle">Like Crystal Clear</a>
+      <a href="../../../../index.html" id="subtitle">Home i Schese</a>
     </h2>
   
 </div>
@@ -55,7 +55,7 @@
         <section id="main"><article id="post-7295 微分方程 2 笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="" class="article-date">
-  <time class="dt-published" datetime="2025-03-16T15:02:17.000Z" itemprop="datePublished">2025-03-16</time>
+  <time class="dt-published" datetime="2025-03-16T22:02:17.000Z" itemprop="datePublished">2025-03-16</time>
 </a>
     
   <div class="article-category">
@@ -79,7 +79,7 @@
     
 <div id="article-toc">
     <h2 class="widget-title">Table Of Contents</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%92%8C%E5%87%BD%E6%95%B0%E7%9A%84%E8%88%B9%E6%96%B0%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">调和函数的船新方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#harnack-%E4%B8%8D%E7%AD%89%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">Harnack 不等式</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%92%8C%E5%87%BD%E6%95%B0%E7%9A%84%E8%88%B9%E6%96%B0%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">调和函数的船新方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#harnack-%E4%B8%8D%E7%AD%89%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">Harnack 不等式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E5%80%BC%E5%8E%9F%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">最大值原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9-delta-u-b_i-u_i-0-%E7%9A%84%E5%B0%8F%E6%8E%A8%E5%B9%BF"><span class="toc-number">1.3.</span> <span class="toc-text">对 \(\Delta u + b_i u_i &#x3D; 0\) 的小推广</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E4%BA%8C%E9%98%B6%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%85%88%E9%AA%8C%E4%BC%B0%E8%AE%A1"><span class="toc-number">2.</span> <span class="toc-text">一般二阶椭圆方程的先验估计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%95%B0%E4%BC%B0%E8%AE%A1%E4%B8%8E-harnack-%E4%B8%8D%E7%AD%89%E5%BC%8F"><span class="toc-number">2.1.</span> <span class="toc-text">对数估计与 Harnack 不等式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E7%95%8C%E4%BC%B0%E8%AE%A1"><span class="toc-number">2.2.</span> <span class="toc-text">有界估计</span></a></li></ol></li></ol>
 </div>
 
     <div class="e-content article-entry" itemprop="articleBody">
@@ -87,6 +87,7 @@
         <p>这是 2025 春 麻希南老师 微分方程2的笔记.</p>
 <span id="more"></span>
 <h2 id="调和函数的船新方法">调和函数的船新方法</h2>
+<p>我们可以暴躁一点, 所有函数都是光滑的.</p>
 <h3 id="harnack-不等式">Harnack 不等式</h3>
 <p>Aim: 证明 Harnack 不等式</p>
 <p>Harnack 不等式: <span class="math inline">\(\sup_{\Omega&#39;} u \leq
@@ -94,17 +95,16 @@ C\inf_{\Omega&#39;} u\)</span> 对于正调和函数 <span
 class="math inline">\(u\)</span> 及 <span
 class="math inline">\(\Omega&#39; \sqsubset \Omega\)</span>.</p>
 <ul>
-<li>传统证明: 积分, 平均值不等式, 对梯度再平均值.</li>
+<li>传统证明: 积分, 平均值不等式, 对梯度再用平均值不等式.</li>
 <li>现在证明 (Nilenberg 等): 用极值原理.</li>
 </ul>
 <p>Slogan: 只要对球做就好. 原因: 由于极大极小值 (能取到! 考虑 <span
 class="math inline">\(\bar\Omega&#39;\)</span> ??)
 之间连线可被球有限覆盖.</p>
-<p>只要有 (对数梯度估计) <span class="math inline">\(\sup_{B_{1 / 2}}
-\frac{|\partial u|}{u} \leq C\)</span> 就好, (用 Newton-Leibnitz
-公式).</p>
-<p>怎么从梯度内估计 (<span class="math inline">\(\sup_{B_{1 / 2}}
-|\partial u| \leq C_n / R \max_{\bar \Omega} |u|\)</span>)
+<p>只要有 (<strong>对数梯度估计</strong>) <span
+class="math inline">\(\sup_{B_{1 / 2}} \frac{|\partial u|}{u} \leq
+C\)</span> 就好, (用 Newton-Leibnitz 公式).</p>
+<p>怎么<!--从梯度内估计 ($\sup_{B_{1 / 2}} |\partial u| \leq C_n / R \max_{\bar \Omega} |u|$)-->
 推导对数梯度估计? 丘成桐 1975.</p>
 <p><strong>定理 (Yau)</strong>. 若 <span class="math inline">\(u &gt; 0
 \in C^3(\Omega)\)</span> 调和, 且 <span class="math inline">\(B_1
@@ -113,24 +113,28 @@ class="math inline">\(\bar\Omega&#39;\)</span> ??)
 <p><strong><em>证明</em></strong>.</p>
 <p>取 <span class="math inline">\(v = \log u\)</span>, 那么 <span
 class="math inline">\(u = \exp v\)</span>, <span
-class="math inline">\(u_i = \exp v.v_i\)</span>, <span
-class="math inline">\(0 = \Delta u = \exp v (|\partial v|^2 + \Delta
-v)\)</span>, i.e. <span class="math inline">\(\Delta v = - |\partial
-v|^2\)</span> (1).</p>
+class="math inline">\(u_i = v_i\exp v\)</span>, <span
+class="math inline">\(0 = \Delta u = (|\partial v|^2 + \Delta v)\exp
+v\)</span>, i.e. <span class="math inline">\(\Delta v = - |\partial
+v|^2\)</span> (1, 方程及其一阶导).</p>
 <p>取辅助函数 <span class="math inline">\(\varphi = (1 - |x|^2)^2
 |\partial u|^2\)</span>, 由于 <span
 class="math inline">\(\varphi\)</span> 在边界等于 <span
 class="math inline">\(0\)</span>, 且 <span class="math inline">\(\varphi
-\geq 0\)</span>, 那么 <span class="math inline">\(\partial\varphi(x_0) =
-0\)</span> (2), <span class="math inline">\(\Delta \varphi(x_0) \leq
-0\)</span> (3). 通过 (1), (2), (3) 证明要证的 <span
-class="math inline">\(|\partial v| \leq C_n\)</span>.</p>
+\geq 0\)</span>, 那么可设 <span class="math inline">\(\varphi\)</span>
+在 <span class="math inline">\(B_1\)</span> 内部 <span
+class="math inline">\(x_0\)</span> 处取极大值, 下述在 <span
+class="math inline">\(x_0\)</span> 处运算. 则此时 <span
+class="math inline">\(\partial\varphi(x_0) = 0\)</span> (2), <span
+class="math inline">\(\Delta \varphi(x_0) \leq 0\)</span> (3, 极值b).
+通过 (1), (2), (3) 证明要证的 <span class="math inline">\(|\partial v|
+\leq C_n\)</span>.</p>
 <p>取 <span class="math inline">\(\eta := 1 - |x|^2\)</span>, <span
 class="math inline">\(\varphi := \eta^2 |\partial v|^2\)</span>, <span
 class="math inline">\(0 = \varphi_i = 2\eta\eta_i |\partial v|^2 +
 \eta^2 2 |\partial v||\partial v|_i\)</span>, i.e. <span
 class="math inline">\(-2\eta_i|\partial v|^2 = \eta (|\partial
-v|^2)_i\)</span> (2').</p>
+v|^2)_i\)</span> (2', 极值a).</p>
 <p>再带入 (3): 即 <span class="math inline">\(0 \geq \Delta \varphi(x_0)
 = \Delta(\eta^2)|\partial v|^2 + 2(\eta^2)_i(|\partial v|^2)_i +
 \eta^2\Delta(|\partial v|^2)\)</span>.</p>
@@ -172,25 +176,253 @@ B\eta\)</span>, 带入 <span class="math inline">\(\eta_i =
 -2x_i\)</span>, <span class="math inline">\(B\eta = 4x^2\)</span>, <span
 class="math inline">\(\Delta \eta = -2n\)</span>, <span
 class="math inline">\(\Delta\eta^2 = 2\eta \Delta\eta +
-4\eta_i\eta_i\)</span>. 于是带入, 并利用 <span
+2\eta_i\eta_i\)</span>. 于是带入, 并利用 <span
 class="math inline">\(\eta^2 &lt; 1\)</span>, <span
 class="math inline">\(x^2 &lt; 1\)</span>:</p>
 <p><span class="math display">\[\begin{aligned}0 &amp;\geq -4n\eta +
-16x^2 - 32x^2 + \eta^2 Bv / n - 16nx^2\\ &amp;\geq -4n - 16 -16n +
-\eta^2 Bv / n.\end{aligned}\]</span></p>
-<p>即 <span class="math inline">\(20n + 16 \leq \eta^2 Bv /
+8x^2 - 32x^2 + \eta^2 Bv / n - 16nx^2\\ &amp;\geq -4n - 24 -16n + \eta^2
+Bv / n.\end{aligned}\]</span></p>
+<p>即 <span class="math inline">\(20n + 24 \leq \eta^2 Bv /
 n\)</span>.</p>
 <p>于是 <span class="math display">\[\sup_{B_{1 / 2}} \eta^2 Bv / n \geq
 \sup_{B_{1 / 2}} Bv / n \inf_{B_{1 / 2}} \eta^2 \geq \frac{9}{16}
 \sup_{B_{1 / 2}} Bv / n.\]</span></p>
 <p>于是再用 (1), 得到 <span class="math inline">\(\sup_{B_{1 / 2}}
-\Delta v \leq \frac{16}{9} n (20n + 16)\)</span>.</p>
+\Delta v \leq \frac{16}{9} n (20n + 24)\)</span>.</p>
 <p>定理得证.</p>
 <p><strong><em>注记</em></strong>. 我们此处的思路就是使用不等式把问题往
 <span class="math inline">\(\Delta v\)</span>, 即 <span
 class="math inline">\(Bv\)</span> 方向化简. 再使用约束 (<span
 class="math inline">\(x &lt; 1\)</span> 什么的) 把不重要的量放成 <span
 class="math inline">\(1\)</span>.</p>
+<h3 id="最大值原理">最大值原理</h3>
+<p><span class="math inline">\(\Delta u = 0\)</span>, <span
+class="math inline">\(u\in C^2 \implies u\in C^\infty\)</span>.
+方法:</p>
+<ol type="1">
+<li>平均值, 恒等逼近.</li>
+<li>高阶导数估计.</li>
+</ol>
+<p>Harnack 不等式已经证明 (对数估计 <span
+class="math inline">\(\sup_{B_{R / 2}} |\partial\log u| \leq C_n /
+R\)</span>, Scaling, 如何理解? <span class="math inline">\(u(y) = U(Rx)
+= \tilde{u}(x)\)</span>, <span class="math inline">\(\partial \log
+\tilde u = \partial_y \log u(y) \partial_x y = R\partial \log
+u\)</span>).</p>
+<p>作业: <span class="math inline">\(\Delta u = 0 \implies \sup_{\bar
+\Omega} Bv \leq \sup_{\partial\Omega} Bv\)</span>,
+整体梯度<strong>估计</strong>.
+今天还介绍梯度内<strong>估计</strong>.</p>
+<p>什么是估计? 有了估计才能用泛函分析得到存在性, 我们在估计时,
+不知道是否有界. 这是一种<strong>先验估计</strong>.
+对方程所有的解得到估计 (比如, <span class="math inline">\(W^{k,
+p}\)</span>, <span class="math inline">\(C^{k, a}\)</span> <span
+class="math inline">\(\impliedby\)</span> 有界, 梯度, Holder).</p>
+<p>梯度<strong>内</strong>估计. 在 <span
+class="math inline">\(\Omega&#39; \sqsubset \Omega\)</span> 中的估计,
+称为内估计, 这与边值 <span class="math inline">\(\partial\Omega\)</span>
+无关.</p>
+<p>椭圆方程, 最重要的是内估计.</p>
+<ul>
+<li><span class="math inline">\(\Delta u = 0\)</span>, 有;</li>
+<li><span class="math inline">\(H(u) = 0\)</span>, 有 1969;</li>
+<li><span class="math inline">\(\det \nabla^2 u = 0\)</span>, 无 1971
+(辅助函数被换了);</li>
+<li>二阶, 未知.</li>
+</ul>
+<p>下面讨论内估计.</p>
+<p><strong>定理</strong>. <span class="math inline">\(\Delta u =
+0\)</span>, 则 <span class="math inline">\(\sup_{B_{1 / 2}} |\partial u|
+\leq C_n / R \max_{\bar B_{1}} |u|\)</span>.</p>
+<p><strong><em>证明</em></strong>. 找辅助函数.</p>
+<p>取 <span class="math inline">\(\eta = 1 - |x|^2\)</span>
+(简单的时候可以用这个, 换掉能发文章...), 取 <span
+class="math inline">\(\varphi := \eta^2 Bu + \alpha u^2\)</span> (<span
+class="math inline">\(\alpha\)</span> 待定, Berstein 技巧, 1900s, 低阶项
+(?) 帮忙)</p>
+<p>如果 <span class="math inline">\(\varphi\)</span> 在 <span
+class="math inline">\(\partial B_1\)</span> 达到极值, 则结论成立: <span
+class="math display">\[9 \sup_{B_{1 / 2}} Bu / 16 \leq \inf_{B_{1 / 2}}
+\eta^2 \sup_{B_{1 / 2}} Bv \leq \sup_{B_{1 / 2}} \varphi \leq \sup_{B_1}
+\varphi = \sup_{\partial B_1}\varphi = \alpha_0 \sup_{\partial B_1}
+Bu.\]</span></p>
+<p>问题归结为, 如何找 <span class="math inline">\(\alpha\)</span> 使得
+<span class="math inline">\(\varphi\)</span> 在边界达到极值.</p>
+<p>来找 <span class="math inline">\(\alpha\)</span>.</p>
+<p>性质: 回忆 Fermat 引理, <span class="math inline">\(u\)</span> 在
+<span class="math inline">\(x_0\)</span> 达到最大 <span
+class="math inline">\(\implies\)</span> <span
+class="math inline">\(\nabla u = 0, \Delta u \leq 0\)</span>. 故如果
+<span class="math inline">\(\Delta \varphi &gt; 0\)</span>, 那么 <span
+class="math inline">\(\varphi\)</span>
+在<strong>只能</strong>边界达到极大值, 实际上, <span
+class="math inline">\(\Delta \varphi \geq 0\)</span>
+足矣让极大值在边界取得. 令 <span class="math inline">\(v := \phi +
+\varepsilon x_1^2\)</span>, 则 <span class="math inline">\(\Delta \phi
+\geq 0\)</span> 能推出 <span class="math inline">\(\Delta v &gt;
+0\)</span>, 再令 <span class="math inline">\(\varepsilon \to 0\)</span>
+即得.</p>
+<p>下面阐述找 <span class="math inline">\(\alpha\)</span> 的方法.</p>
+<p><span class="math inline">\(\varphi_i = \eta^2_{, i} Bu + \eta^2 Bu_i
++ \alpha u^2_{,i}\)</span> (注意顺序! <span
+class="math inline">\(\eta_{,i}^2 := (\eta^2)_i\)</span>, <span
+class="math inline">\(Bu_i := (Bu)_i\)</span>, 因为 <span
+class="math inline">\(B\)</span> 只对标量函数作用! 或者 <span
+class="math inline">\(B\)</span> 的优先级高于导数).</p>
+<p><span class="math inline">\(0 \geq? \Delta \varphi = \Delta(\eta^2)
+Bu + 2\eta^2_{,i} Bu_{i} + \eta^2 \Delta Bu + \alpha
+\Delta(u^2)\)</span> (注意顺序!).</p>
+<p>带入 <span class="math inline">\(\Delta\eta^2 = 2\eta \Delta\eta +
+4\eta_i\eta_i\)</span>. 并且 <span class="math inline">\(\Delta u = 0
+\implies 2u\Delta u + 2Bu = 0 \implies u\Delta u = - Bu\)</span>.</p>
+<ol type="1">
+<li>保留,</li>
+<li><span class="math inline">\(\eta^2_{,i} = 2\eta \eta_i\)</span>,
+<span class="math inline">\(Bu_i = 2u_ju_{ij}\)</span>, 所以为 <span
+class="math inline">\(-8 \eta_i \eta u_j u_{ij}\)</span>,</li>
+<li><span class="math inline">\(\Delta Bv = 2\Delta u_iu_i =
+2u_{ij}u_{ij}\)</span>, 所以为 <span class="math inline">\(2\eta^2
+u_{ij}u_{ij} = 2\eta^2 |\partial^2 u|^2\)</span>,</li>
+<li><span class="math inline">\(2u\Delta u + 4u_iu_i =
+2Bu\)</span>.</li>
+</ol>
+<p>化简得, <span class="math inline">\(2\eta^2 |\partial^2 u|^2 +
+8\eta\eta_i u_i u_{ij} + [2\alpha + \Delta (\eta^2)] Bu \geq?
+0\)</span>.</p>
+<p>第一, 第三项都可以大于零, 想使得第二项大于零. 用 Cauchy 不等式.</p>
+<ul>
+<li><span class="math inline">\(8\eta\eta_i u_i u_{ij} \leq 2\eta^2B^2 u
++ 8 B\eta Bu\)</span> (记 <span class="math inline">\(|\partial^2
+u|^2\)</span> 为 <span class="math inline">\(B^2 u\)</span>).</li>
+</ul>
+<p>从而 <span class="math inline">\(\Delta \varphi \geq 2\eta^2
+|\partial^2 u|^2 - (2\eta^2B^2 u + 8 B\eta Bu) + [2\alpha + \Delta
+(\eta^2)] Bu = B^2u (2\eta^2 - 2\eta^2) + Bu(2\alpha + \Delta (\eta^2) -
+8B\eta)\)</span>.</p>
+<p>带入 <span class="math inline">\(\eta_i = -2x_i\)</span>, <span
+class="math inline">\(B\eta = 4x^2\)</span>, <span
+class="math inline">\(\Delta \eta = -2n\)</span> 及 <span
+class="math display">\[\Delta\eta^2 = 2\eta \Delta\eta + 2\eta_i\eta_i =
+-4n \eta + 4 x_ix_i.\]</span> 得到</p>
+<p><span class="math display">\[\Delta \varphi \geq Bu (2\alpha -4n\eta
++ 8x^2 - 32 x^2) = Bu (2\alpha - 4n + 4n x^2 - 24 x^2) \geq Bu(2\alpha -
+4n -24),\]</span> 所以取 <span class="math inline">\(2\alpha \geq 4n +
+24\)</span> 即可.</p>
+<p>定理得证.</p>
+<p><strong><em>注记</em></strong>.</p>
+<h3 id="对-delta-u-b_i-u_i-0-的小推广">对 <span
+class="math inline">\(\Delta u + b_i u_i = 0\)</span> 的小推广</h3>
+<p>下面均在有界区域中谈.</p>
+<p>若 <span class="math inline">\(\Delta u \geq 0\)</span>,
+则最大值在边界达到. 若 <span class="math inline">\(\Delta u \leq
+0\)</span>, 则最小值在边界达到 (类似证明).</p>
+<p>所以若 <span class="math inline">\(\Delta u = 0\)</span>, 则最大,
+最小值均在边界达到.</p>
+<p>换一个方程: <span class="math inline">\(\Delta u + b_i u_i \geq
+0\)</span> 呢?</p>
+<p>此时, 最大值在边界达到.</p>
+<p><strong><em>证明</em></strong>.</p>
+<ol type="1">
+<li>若严格大于 <span class="math inline">\(0\)</span>,
+那么直接分析得证<strong>只能</strong>在边界达到.</li>
+<li>下面考虑辅助函数? 是否可以 (<span class="math inline">\(\Delta v +
+b_i v_i &gt; 0\)</span>?) 仍然用 <span class="math inline">\(v := u +
+\varepsilon x^2?\)</span> 不行.</li>
+</ol>
+<p>换成 <span class="math inline">\(v := u + \varepsilon e^{\beta
+x_1}\)</span>, 此时 <span class="math inline">\(\Delta v = \Delta u +
+\varepsilon \beta^2 e^{\beta x_1}\)</span>. 于是 <span
+class="math inline">\(\Delta v + b_i v_i = \Delta u + \varepsilon
+\beta^2 e^{\beta x_1} + b_i(v_i + \varepsilon \beta e^{\beta
+x_1}\delta_{i1})\)</span>. 取 <span class="math inline">\(\beta &gt; 1 +
+|b|\)</span> 即可.</p>
+<p>得证.</p>
+<p><strong><em>作业</em></strong>:</p>
+<ol type="1">
+<li>取 <span class="math inline">\(v := u + \varepsilon e^{\beta
+x^2}\)</span>?</li>
+<li>找到 <span class="math inline">\(\alpha\)</span> 的范围, 使得 <span
+class="math inline">\(\varphi := \frac{Bv}{v^\alpha}\)</span> 在 <span
+class="math inline">\(\partial \Omega\)</span> 达到最大值.</li>
+</ol>
+<p><strong>定理</strong>. 若 <span class="math inline">\(\Delta u + b_i
+u_i = 0\)</span>, 那么 <span class="math inline">\(\sup_{\bar \Omega}
+|\partial u| \leq c(1 + \sup_{\partial \Omega} |\partial
+u|)\)</span>.</p>
+<p><strong><em>证明</em></strong>. 取 <span
+class="math inline">\(\varphi := Bu + \alpha u^2 + e^{\beta
+x_1}\)</span>, 是否有 <span class="math inline">\(\Delta \varphi + b_i
+\varphi_i \geq 0\)</span>? 计算</p>
+<p><span class="math display">\[\begin{aligned}
+\Delta \varphi + b_i \varphi_i &amp;= \Delta Bu + \alpha 2u \Delta u + 2
+Bu + \beta^2 e^{\beta x_1} \\ &amp; + b_i Bu_i + \alpha b_i u^2_{, i} +
+\beta e^{\beta x_1}b_1.
+\end{aligned}\]</span></p>
+<h2 id="一般二阶椭圆方程的先验估计">一般二阶椭圆方程的先验估计</h2>
+<p>先验估计?</p>
+<p>能否把内部梯度估计的前述的 <span
+class="math inline">\(\Delta\)</span> 换成一个线性椭圆算子 <span
+class="math inline">\(L\)</span>? 对数梯度估计呢? (这和边值无关)</p>
+<p>关于 <span class="math inline">\(\Delta\)</span>
+<strong>边值问题</strong> (Dirichlet / Neumann) 的先验估计 (有界)
+是否能够推广到 <span class="math inline">\(L\)</span> 呢?
+如何做先验估计?</p>
+<p>先验估计第一步是有界估计.</p>
+<h3 id="对数估计与-harnack-不等式">对数估计与 Harnack 不等式</h3>
+<p>利用三个结论:</p>
+<ol type="1">
+<li>方程及其一阶导数.</li>
+<li><span class="math inline">\(\varphi_i(x_0) = 0\)</span>.</li>
+<li><span class="math inline">\(\Delta \varphi(x_0) \leq
+0\)</span>.</li>
+</ol>
+<p>回忆 1 在化简第三项 <span class="math inline">\(\eta^2 \Delta
+Bv\)</span> 时候用到.</p>
+<p>用上述方法做一般的情况, 结论: <span class="math inline">\(\sup_{B_{1
+/ 2}} B\log u \leq C(n, |a_{ij}|_{C^1(\bar B_1)}, \lambda,
+\Lambda)\)</span>.</p>
+<p>做一点线性代数, 若 <span class="math inline">\(A, B\)</span>
+为对称阵, <span class="math inline">\((a_{ij})_{ij}\)</span> 为 <span
+class="math inline">\(A\)</span> 的坐标表达.</p>
+<ul>
+<li>若 <span class="math inline">\(A \geq 0 \geq B\)</span>, 则 <span
+class="math inline">\(\operatorname{tr} AB \leq 0\)</span>.</li>
+<li>若 <span class="math inline">\(\lambda I \leq a_{ij}(x) \leq \Lambda
+I\)</span>, 则 <span class="math inline">\(a_{ij}^2 \leq
+a_{ii}a_{jj}\)</span>.</li>
+</ul>
+<p><strong><em>证明</em></strong>.</p>
+<p>取 <span class="math inline">\(v := \log u\)</span>, 此时方程变为
+<span class="math inline">\(a_{ij} v_{ij} = -a_{ij} v_iv_j\)</span>. 取
+<span class="math inline">\(\varphi := \eta^2 w\)</span>, 其中 <span
+class="math inline">\(w := a_{ij}v_i v_j\)</span>, <span
+class="math inline">\(\eta\)</span> 同上.</p>
+<p>假设在 <span class="math inline">\(x_0\)</span> 达到极大值,
+所有计算在 <span class="math inline">\(x_0\)</span> 处进行. 现在有:</p>
+<ol type="1">
+<li>方程及一阶导 (这是线性化算子出现的原因),</li>
+<li><span class="math inline">\((\eta^2)_i w + \eta^2 w_i =
+\varphi_i(x_0) = 0\)</span>,</li>
+<li><span class="math inline">\((\eta^2)_{ij} w + (\eta^2)_i w_j +
+(\eta^2)_j w_i + \eta^2 w_{ij} = \varphi_{ij}(x_0) \leq 0\)</span>,
+这里指半负定.</li>
+</ol>
+<p>Slogan: 不论是椭圆, 双曲还是抛物, 我们都必须用算子在 <span
+class="math inline">\(u\)</span> 处沿 <span
+class="math inline">\(v\)</span> 方向微分 (称为线性化算子)
+的主部诱导的辅助函数. 此处线性化算子为 <span class="math inline">\(L_u
+(-) := a_{ij}(-)_{ij}\)</span>. (实际上 <span
+class="math inline">\(Bv\)</span> 也可以)</p>
+<p>将上述三者带入线性化算子 <span class="math inline">\(L_u \varphi =
+a_{ij} \varphi_{ij} = a_{ij}(\eta^2)_{ij} w + 2a_{ij}(\eta^2)_i w_j +
+a_{ij}\eta^2 w_{ij}\)</span>.</p>
+<p>第二项, 使用 2 得到 <span class="math inline">\(2a_{ij} \eta^2
+w_iw_j\)</span>.</p>
+<p>第三项...</p>
+<p>而由于 <span class="math inline">\(\varphi_{ij}(x_0) \leq 0 \leq
+a_{ij}\)</span>, 得到 <span class="math inline">\(L_u \varphi \leq
+0\)</span>.</p>
+<h3 id="有界估计">有界估计</h3>
 
       
     </div>
@@ -198,13 +430,22 @@ class="math inline">\(1\)</span>.</p>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E8%AE%B2%E4%B9%89/" rel="tag">讲义</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
 
     </footer>
   </div>
   
     
 <nav id="article-nav">
+  
+    <a href="../../30/7309%20Higher%20Dimensional%20Geometry%20Chapter%207/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Higher Dimensional Geometry Chapter 7
+        
+      </div>
+    </a>
   
   
     <a href="../../15/7294%20Riemann%20%E5%87%A0%E4%BD%95%E5%A4%A7%E6%84%8F/" id="article-nav-older" class="article-nav-link-wrap">
@@ -233,6 +474,10 @@ class="math inline">\(1\)</span>.</p>
       <ul>
         
           <li>
+            <a href="../../30/7309%20Higher%20Dimensional%20Geometry%20Chapter%207/">Higher Dimensional Geometry Chapter 7</a>
+          </li>
+        
+          <li>
             <a href="">微分方程 2</a>
           </li>
         
@@ -249,7 +494,7 @@ class="math inline">\(1\)</span>.</p>
           </li>
         
           <li>
-            <a href="../../../../2024/12/21/7210%20SO(3)%20%E4%B8%8E%20SU(2)/">SO(3) 与 SU(2)</a>
+            <a href="../../../../2024/12/20/7210%20SO(3)%20%E4%B8%8E%20SU(2)/">SO(3) 与 SU(2)</a>
           </li>
         
           <li>
@@ -281,7 +526,7 @@ class="math inline">\(1\)</span>.</p>
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/">同调代数</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/">几何</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/">代数几何</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/Hodge/">Hodge</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/MMP/">MMP</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E6%9D%8E%E7%BE%A4/">李群</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95/">黎曼几何</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E6%96%B9%E7%A8%8B/">方程</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E6%96%B9%E7%A8%8B/%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">偏微分方程</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/">新年展望</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/2024-%E6%96%B0%E5%B9%B4/">2024 新年</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/2025-%E6%96%B0%E5%B9%B4/">2025 新年</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/">同调代数</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/">几何</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/">代数几何</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/Hodge/">Hodge</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/MMP/">MMP</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E6%9D%8E%E7%BE%A4/">李群</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95/">黎曼几何</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E6%96%B9%E7%A8%8B/">方程</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E6%96%B9%E7%A8%8B/%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">偏微分方程</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/">新年展望</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/2024-%E6%96%B0%E5%B9%B4/">2024 新年</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/2025-%E6%96%B0%E5%B9%B4/">2025 新年</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul>
     </div>
   </div>
 
@@ -291,7 +536,7 @@ class="math inline">\(1\)</span>.</p>
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="../../../../tags/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/" style="font-size: 15px;">新年展望</a> <a href="../../../../tags/%E8%AE%B2%E4%B9%89/" style="font-size: 20px;">讲义</a> <a href="../../../../tags/%E8%AF%BE%E7%A8%8B/" style="font-size: 10px;">课程</a>
+      <a href="../../../../tags/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/" style="font-size: 13.33px;">新年展望</a> <a href="../../../../tags/%E7%AC%94%E8%AE%B0/" style="font-size: 16.67px;">笔记</a> <a href="../../../../tags/%E8%AE%B2%E4%B9%89/" style="font-size: 20px;">讲义</a> <a href="../../../../tags/%E8%AF%BE%E7%A8%8B%E8%80%83%E8%AF%95/" style="font-size: 10px;">课程考试</a>
     </div>
   </div>
 
